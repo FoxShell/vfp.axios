@@ -32,14 +32,10 @@ See samples folder
 
 1. Download and save an image 
 
+Please see the file: [samples/binary.prg](./samples/binary.prg). 
+
 ```harbour
-DO (GETENV("userprofile") + "\Kawix\Shide\interop")
-DO (GETENV("userprofile") + "\Kawix\Shide.lib\axios")
-
-LOCAL req
-
-* Make public, so you can inspect in debugger
-public response 
+...
 
 req = axios()
 req.params.responsetype = 'arraybuffer'
@@ -53,13 +49,10 @@ STRTOFILE(response.data, GETENV("userprofile") + "\documents\imagen.jpg")
 
 2. Call a JSON API and get object
 
-```harbour
-DO (GETENV("userprofile") + "\Kawix\Shide\interop")
-DO (GETENV("userprofile") + "\Kawix\Shide.lib\axios")
+Please see the file: [samples/json.prg](./samples/json.prg). 
 
-LOCAL req
-* public, so you can inspect in debugger
-public response 
+```harbour
+...
 
 req = axios()
 * an api that returns post list
@@ -79,3 +72,24 @@ ENDFOR
 
 Please see the file: [samples/post.prg](./samples/post.prg). 
 You can send data as JSON, or as form data
+
+
+```harbour
+...
+
+req = axios()
+req.method = 'POST'
+req.form.addparameter("from", "VFP9 using vfp.axios")
+req.url = "https://httpbin.org/post"
+response = req.getResponse()
+? m.response.data .form.from 
+```
+
+
+
+# Additional help 
+
+If you have an specific requirenment, or want integrate this library in your project, contact us
+
+ - contacto@kodhe.com
+ - developer@kodhe.com
