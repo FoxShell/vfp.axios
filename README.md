@@ -1,6 +1,7 @@
 # vfp.axios 
 
-Rest Client, Web request from VFP
+Rest Client, Web request from VFP.
+Works on VFP Advanced 64 bits!
 
 # Be an sponsor
 
