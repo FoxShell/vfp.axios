@@ -14,15 +14,9 @@ Make open source software is hard, and need many time. Please consider donate, y
 
 
 
-# Installation 
+# Import to your project 
 
-1. Install [@kawix/core](https://github.com/kodhework/kawix/blob/master/core/INSTALL.md)
-
-2. Install the Shide Lib. From cmd: 
-
-```bash
-kwcore gh+/voxsoftware/packages/shide/0.0.2.kwa
-```
+Import FoxShell/Shide: [https://github.com/FoxShell/shide#import-shide-in-your-project](https://github.com/FoxShell/shide#import-shide-in-your-project)
 
 That's all, you are ready to use. See the examples
 
