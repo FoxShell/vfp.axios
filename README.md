@@ -84,5 +84,4 @@ response = req.getResponse()
 
 If you have an specific requirenment, or want integrate this library in your project, contact us
 
- - contacto@kodhe.com
  - developer@kodhe.com
